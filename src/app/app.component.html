@@ -1,0 +1,113 @@
+<div class="card-container">
+
+  <div class="card">
+    <div mat-card-avatar class="avatar-header-image"></div>
+    <!-- <img class="avatar-header-image" src="../assets/avatar-profile.jpg" alt="Avatar"> -->
+    <div class="reviewlbl">
+      <label>Write a review</label>
+    </div>
+    <div class="star-div">
+      <div class="star" *ngFor="let item of ['1', '2', '3', '4', '5']">
+        <i class="material-icons">
+          star_border
+        </i>
+      </div>
+    </div>
+  </div>
+
+  <mat-card class="simple-card">
+    <!-- <mat-divider></mat-divider> -->
+    <mat-card-content>
+      <div class="reviews-div">
+        <label id="reviewslbl">Reviews</label>
+        <label id="reviews-number">329</label>
+      </div>
+
+      <div class="filter-div">
+        <label>Filter by:</label>
+        <button mat-raised-button>
+          Rating
+          <mat-icon>add_circle_outline</mat-icon>
+        </button>
+        <button mat-raised-button>
+          English
+          <mat-icon>play_circle_outline</mat-icon>
+        </button>
+      </div>
+      <hr id="line" />
+      <div>
+        <div class="progressbar-view">
+          <div id="checkbox" class="material-icons">
+            check_box_outline_blank
+          </div>
+          <label>Excellent</label>
+          <mat-progress-bar mat-accent mode="determinate" value="58"></mat-progress-bar>
+          <label>58%</label>
+        </div>
+
+        <div class="progressbar-view">
+          <div id="checkbox" class="material-icons">
+            check_box_outline_blank
+          </div>
+          <label>Great</label>
+          <mat-progress-bar mat-accent mode="determinate" value="9"></mat-progress-bar>
+          <label>9%</label>
+        </div>
+
+        <div class="progressbar-view">
+          <div id="checkbox" class="material-icons">
+            check_box_outline_blank
+          </div>
+          <label>Average</label>
+          <mat-progress-bar mat-accent mode="determinate" value="2"></mat-progress-bar>
+          <label>2%</label>
+        </div>
+
+        <div class="progressbar-view">
+          <div id="checkbox" class="material-icons">
+            check_box_outline_blank
+          </div>
+          <label>Poor</label>
+          <mat-progress-bar mat-accent mode="determinate" value="2"></mat-progress-bar>
+          <label>2%</label>
+        </div>
+
+        <div class="progressbar-view">
+          <div id="checkbox" class="material-icons">
+            check_box_outline_blank
+          </div>
+          <label>Bad</label>
+          <mat-progress-bar mat-accent mode="determinate" value="31"></mat-progress-bar>
+          <label>31%</label>
+        </div>
+      </div>
+
+
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="simple-card">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar-header-image"></div>
+      <mat-card-title>Heidi Hasan</mat-card-title>
+      <mat-card-subtitle>
+        <mat-icon>edit</mat-icon>
+        3 Reviews
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <hr id="second-line" />
+
+      <div class="star-div-green">
+        <div class="star-green" *ngFor="let item of ['1', '2', '3', '4', '5']">
+          <i class="material-icons">
+            star_border
+          </i>
+        </div>
+      </div>
+
+      <label id="updateLbl">Updated 2 days ago</label>
+    </mat-card-content>
+  </mat-card>
+</div>
+<router-outlet></router-outlet>

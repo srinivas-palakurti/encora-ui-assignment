@@ -1,0 +1,181 @@
+.card-container {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card {
+  border: 1px solid #eee;
+  background-color: white;
+  height: fit-content;
+  width: 85%;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
+  line-height: 24px;
+}
+
+.avatar-header-image {
+  background-image: url("../assets/avatar-profile.jpg");
+  background-size: cover;
+  // width: 50px;
+  // height: 50px;
+  // border-radius: 50%;
+  // padding: 0px 5px 0px 5px;
+}
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0px 5px 0px 5px;
+  // float: left;
+  display: inline-block;
+}
+.reviewlbl {
+  // float: right;
+  margin-top: 5px;
+  padding-left: 10px;
+  color: #43b46b;
+  font-family: sans-serif;
+  font-size: 14px;
+  // font-weight: bold;
+}
+
+.star-div {
+  display: inline-flex;
+  margin-left: auto;
+}
+.star {
+  max-width: 18px;
+  max-height: 35px;
+  padding-top: 10px;
+  padding-left: 4px;
+  padding-right: 12px;
+  /* text-align: center; */
+  background-color: rgba(62, 35, 35, 0.22);
+  padding-left: 50x;
+  margin-left: 5px;
+}
+
+.reviews-div {
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#reviews-number {
+  padding-left: 10px;
+  color: lightslategray;
+}
+
+.filter-div {
+  display: inline-block;
+  margin-left: auto;
+  padding-left: 5px;
+  float: right;
+}
+.filter-div label {
+  font-weight: bold;
+  color: lightslategray;
+  // padding-right: 5px;
+}
+.filter-div button {
+  background: border-box;
+  color: black;
+  margin-left: 5px;
+}
+.write-review-card {
+  display: block;
+  position: relative;
+  // padding: 5%;
+  background: white;
+  height: fit-content;
+  width: 55%;
+  padding-right: 5%;
+}
+
+.reviews-card {
+  display: block;
+  position: relative;
+  // padding: 5%;
+  background: white;
+  // height: fit-content;
+  width: 65%;
+  padding-right: 5%;
+}
+
+.person-card {
+  display: block;
+  position: relative;
+  // padding: 5%;
+  background: white;
+  height: fit-content;
+  width: 65%;
+  padding-right: 5%;
+}
+
+mat-card {
+  background-color: white;
+  // margin-left: 10px;
+  width: 85%;
+  color: black;
+  margin: 10px;
+}
+mat-progress-bar {
+  height: 15px;
+  border-radius: 2px;
+  margin: 10px;
+}
+
+mat-card-subtitle {
+  color: black;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: rgb(13, 51, 104);
+}
+
+::ng-deep .mat-progress-bar-buffer {
+  background: #e4e8eb;
+}
+
+.progressbar-view {
+  display: flex;
+}
+
+#checkbox {
+  margin: 5px;
+}
+
+.progressbar-view label {
+  margin: 8px;
+  min-width: 50px;
+}
+
+#line {
+  margin-top: 50px;
+}
+
+#second-line {
+  margin-top: 10px;
+}
+
+.star-green {
+  background: green;
+  float: left;
+  margin-left: 2px;
+}
+
+.star-div-green {
+  height: 20px;
+  display: inline-block;
+}
+#updateLbl {
+  color: lightslategray;
+  margin-left: auto;
+  float: right;
+}
